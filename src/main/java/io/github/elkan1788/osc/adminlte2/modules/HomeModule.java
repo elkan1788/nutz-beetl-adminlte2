@@ -20,4 +20,9 @@ public class HomeModule {
 
     }
 
+    @At("/alte2")
+    @Ok("beetl:alte2.btl")
+    public void lte2Page() {
+
+    }
 }
