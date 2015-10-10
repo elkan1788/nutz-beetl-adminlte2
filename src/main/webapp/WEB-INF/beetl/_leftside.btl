@@ -1,0 +1,47 @@
+ <aside class="main-sidebar">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+          <!-- Sidebar user panel -->
+          <div class="user-panel">
+            <div class="pull-left image">
+              <img src="${base}/statics/vender/adminlte2/img/avatar.png" class="img-circle" alt="User Image">
+            </div>
+            <div class="pull-left info">
+              <p>Alexander Pierce</p>
+              <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+            </div>
+          </div>
+          <!-- sidebar menu: : style can be found in sidebar.less -->
+          <ul class="sidebar-menu" style="font-size:10px;">
+            <li class="header">导航菜单</li>
+            <li class="treeview <%if(tvactive=="0"){print("active");}%>">
+              <a href="#">
+                <i class="fa fa-dashboard"></i>
+				<span>系统监控</span>
+				<i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li <%if(tmactive=="0"){print("class='active'");}%>>
+                <a href="#"><i class="fa fa-desktop"></i>服务器状态</a>
+                </li>
+                <li <%if(tmactive=="1"){print("class='active'");}%>>
+                <a href="#"><i class="fa fa-database"></i> 数据库状态</a>
+                </li>
+              </ul>
+              <li class="treeview">
+              <a href="#">
+                <i class="fa fa-commenting"></i>
+				<span>微信配置</span>
+				<i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li>
+                <a href="#"><i class="fa fa-commenting-o"></i>公众号信息</a></li>
+                <li><a href="#"><i class="fa fa-hand-lizard-o"></i>欢迎语</a></li>
+                <li><a href="#"><i class="fa fa-users"></i>粉丝信息</a></li>
+              </ul>
+            </li>            
+          </ul>
+        </section>
+        <!-- /.sidebar -->
+      </aside>
