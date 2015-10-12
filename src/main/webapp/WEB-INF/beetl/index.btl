@@ -1,5 +1,5 @@
 <%
-	layout("_layout.btl", {"tvactive":"0","tmactive":"1"}){
+	layout("_layout.btl", {"tvactive":"0","tmactive":"01"}){
 %>
 <!-- Small boxes (Stat box) -->
 		<div class="row">
