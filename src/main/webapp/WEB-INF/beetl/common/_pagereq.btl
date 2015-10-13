@@ -1,0 +1,15 @@
+<%
+	var pageCss = {
+%>
+<!-- DataTables -->
+<link rel="stylesheet" href="${base}/statics/vender/adminlte2/plugins/datatables/dataTables.bootstrap.css">
+<%
+	};
+	var pageJs = {
+%>
+<!-- DataTables -->
+<script src="${base}/statics/vender/adminlte2/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="${base}/statics/vender/adminlte2/plugins/datatables/dataTables.bootstrap.min.js"></script>
+<%
+	};
+%>

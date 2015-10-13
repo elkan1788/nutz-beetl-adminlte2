@@ -10,7 +10,7 @@ import org.nutz.mvc.annotation.Ok;
  * @author 凡梦星尘(elkan1788@gmail.com)
  * @since 1.0
  */
-@At("/alte2/home")
+@At("/admin")
 @IocBean
 public class HomeModule {
 

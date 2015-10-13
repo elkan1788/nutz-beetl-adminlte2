@@ -1,4 +1,7 @@
-<%DIRECTIVE DYNAMIC;%>
+<%
+DIRECTIVE DYNAMIC;
+DIRECTIVE SAFE_OUTPUT_OPEN;
+%>
 <!DOCTYPE html>
 <html>
   <head>
@@ -13,6 +16,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="${base}/statics/vender/adminlte2/plugins/datatables/dataTables.bootstrap.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="${base}/statics/vender/adminlte2/css/AdminLTE.min.css">
     <!-- AdminLTE Skins. Choose a skin from the css/skins
@@ -168,5 +173,9 @@
     <script src="${base}/statics/vender/adminlte2/js/app.min.js"></script>
     <!-- Skins -->
     <script src="${base}/statics/vender/adminlte2/js/skins.min.js"></script>
+    <!-- DataTables -->
+    <script src="${base}/statics/vender/adminlte2/plugins/datatables/jquery.dataTables.min.js"></script>
+	<script src="${base}/statics/vender/adminlte2/plugins/datatables/dataTables.bootstrap.min.js"></script>
+    ${pagination}
   </body>
 </html>

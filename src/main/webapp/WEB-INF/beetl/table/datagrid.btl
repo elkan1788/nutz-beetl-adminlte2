@@ -1,0 +1,64 @@
+<%
+	var tags = ["首页","表格","数据表格"];	
+	var pagination = {
+%>
+<script type="text/javascript">
+	$(function(){
+		$('#datagrid').DataTable({
+          "paging": true,
+		  "processing": true,
+          "lengthChange": true,
+          "searching": true,
+          "ordering": true,
+          "info": true,
+          "autoWidth": false,
+          "serverSide": true,
+		  "ajax": {
+		  	"url": "${base}/admin/table/data.ntz",
+			"type": "POST"
+		  }
+        });
+	});
+</script>
+<%
+	};
+	layout("../common/_layout.btl", 
+	{
+		"tvactive":"2",
+		"tmactive":"21",
+		"title":"表格",
+		"desc":"后台数据表格",
+		"faicon":" fa-table",
+		"tags":tags,
+		"user":"凡梦星尘",
+		"pagination":pagination
+	}){
+%>
+
+<%
+	layout("../common/_pagination.btl",{
+		"tableTitle": "数据表格"
+	}){
+%>
+
+<thead>
+	<tr>
+		<th>RenderingEngine</th>
+        <th>Browser</th>
+        <th>Platform</th>
+        <th>Engineversion</th>
+        <th>CSSGrade</th>
+    </tr>
+</thead>
+<tfoot>
+	<tr>
+		<th>RenderingEngine</th>
+        <th>Browser</th>
+        <th>Platform</th>
+        <th>Engineversion</th>
+        <th>CSSGrade</th>
+    </tr>
+</tfoot>
+              
+<%	}	%>
+<%}	%>

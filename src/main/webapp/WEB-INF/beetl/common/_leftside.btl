@@ -38,13 +38,28 @@
      	</a> 
       <ul class="treeview-menu"> 
        <li <%if(tmactive=="10"){print("class='active'");}%>>
-	       <a href="#"><i class="fa fa-commenting-o"></i>公众号信息</a>
+	       <a href="#"><i class="fa fa-commenting-o"></i> 公众号信息</a>
        </li> 
        <li <%if(tmactive=="11"){print("class='active'");}%>>
-		   <a href="#"><i class="fa fa-hand-lizard-o"></i>欢迎语</a>
+		   <a href="#"><i class="fa fa-hand-lizard-o"></i> 欢迎语</a>
        </li> 
        <li <%if(tmactive=="12"){print("class='active'");}%>>
-		   <a href="#"><i class="fa fa-users"></i>粉丝信息</a>
+		   <a href="#"><i class="fa fa-users"></i> 粉丝信息</a>
+       </li> 
+      </ul> 
+     </li> 
+     <li class="treeview<%if(tvactive=="2"){print(" active");}%>"> 
+     	<a href="#"> 
+	     	<i class="fa  fa-table"></i> 
+	     	<span>表格</span> 
+	     	<i class="fa fa-angle-left pull-right"></i> 
+     	</a> 
+      <ul class="treeview-menu"> 
+       <li <%if(tmactive=="20"){print("class='active'");}%>>
+	       <a href="#"><i class="fa fa-calculator"></i> 普通表格</a>
+       </li> 
+       <li <%if(tmactive=="21"){print("class='active'");}%>>
+		   <a href="${base}/admin/table/datagrid.ntz"><i class="fa fa-newspaper-o"></i> 数据表格</a>
        </li> 
       </ul> 
      </li> 

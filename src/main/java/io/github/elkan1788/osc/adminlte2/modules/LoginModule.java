@@ -15,7 +15,7 @@ import org.nutz.mvc.annotation.Param;
  * @author 凡梦星尘(elkan1788@gmail.com)
  * @since 1.0
  */
-@At("/alte2/login")
+@At("/admin/login")
 @IocBean
 public class LoginModule {
 
@@ -28,7 +28,7 @@ public class LoginModule {
         result.put("act", account);
         result.put("id", 100);
         result.put("cnt", 10);
-        result.put("home", "alte2/home/index.ntz");
+        result.put("home", "admin/index.ntz");
         return result;
     }
 }
